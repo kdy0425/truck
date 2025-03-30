@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1600"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>화물공제분담금</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/toastify.min.css" />
+<link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+<link rel="stylesheet" href="../../assets/css/simplebar.css" />
+<link href="../../assets/css/choices.css" rel="stylesheet"/>
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="../../assets/js/simplebar.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/pikaday.js"></script>
+<script src="../../assets/js/inputmask.js"></script>
+<script src="../../assets/js/toastify-js.js"></script>
+<script src="../../assets/js/choices.js"></script>
+
+<!-- jqgrid -->
+<link rel="stylesheet" href="../../assets/css/ui.jqgrid.css" type="text/css" />
+<script type="text/javascript" src="../../assets/js/grid.locale-kr.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery.jqGrid.src.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">화물공제분담금</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+    <div id="header">
+        <div id="logo">
+            <a href="../main/main.html"><img src="../../assets/images/logo.png" alt="KTA 화물공제분담금 신용카드수납시스템" style="height: 2.5rem;"></a>
+        </div>
+        <div class="hd_nav">
+            <nav id="nav">
+                <ul>
+                    <li class="on"><a href="javascript:;">조합원 정보</a></li>
+                    <li><a href="javascript:;">수납관리</a></li>
+                    <li><a href="javascript:;">정산관리</a></li>
+                    <li><a href="javascript:;">통계</a></li>
+                    <li><a href="javascript:;">게시판관리</a></li>
+                    <li><a href="javascript:;">연계관리</a></li>
+                    <li><a href="javascript:;">시스템관리</a></li>
+                </ul>
+            </nav>
+            <div class="nav_inner" style="display: none;">
+                <div class="title">
+                    <strong>전체메뉴</strong>
+                    <p>전체 시스템 메뉴를 한눈에<br/>
+                        보실 수 있습니다.</p>
+                </div>
+                <ul>
+                    <li class="on">
+                        <ul>
+                            <li><a href="javascript:;" class="on">조합원정보조회</a></li> 
+                            <li><a href="javascript:;">차량정보조회</a></li> 
+                            <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">전체수납대상</a></li> 
+                            <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                            <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                            <li><a href="javascript:;">적재물</a></li> 
+                            <li><a href="javascript:;">종사자재해</a></li> 
+                            <li><a href="javascript:;">가입금</a></li> 
+                            <li><a href="javascript:;">자부담금</a></li> 
+                            <li><a href="javascript:;">추가부담금</a></li> 
+                            <li><a href="javascript:;">수납내역 조회</a></li> 
+                            <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                            <li><a href="javascript:;">실시간승인내역</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">거래내역조회</a></li> 
+                            <li><a href="javascript:;">매입내역조회</a></li> 
+                            <li><a href="javascript:;">입금내역조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                            <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">공지사항</a></li> 
+                            <li><a href="javascript:;">자료실</a></li> 
+                            <li><a href="javascript:;">문의사항</a></li> 
+                            <li><a href="javascript:;">자주묻는질문</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">배치결과</a></li> 
+                            <li><a href="javascript:;">ARS로그조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">사용자관리</a></li> 
+                            <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                            <li><a href="javascript:;">공통코드관리</a></li> 
+                            <li><a href="javascript:;">KTA통합코드</a></li> 
+                            <li><a href="javascript:;">권한관리</a></li> 
+                            <li><a href="javascript:;">지원관리</a></li> 
+                            <li><a href="javascript:;">메뉴관리</a></li> 
+                            <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="header_links">
+            <div class="item">
+                <span class="text"><strong>관리자</strong> (000-0000-0000)</span>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">로그아웃</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">회원정보변경</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="green">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9019 3.16667H2.09762C1.42994 3.16667 0.888672 3.7016 0.888672 4.36148V12.1592C0.888672 12.8191 1.42994 13.354 2.09762 13.354H13.9019C14.5696 13.354 15.1109 12.8191 15.1109 12.1592V4.36148C15.1109 3.7016 14.5696 3.16667 13.9019 3.16667Z" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.888672 9.72917H15.1109" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.9824 5.85243H12.7667" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <strong>사용카드등록</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
+	<div id="aside" class="active">
+        <div class="aside_inner">
+            <div class="toggle_button_box">
+                <button id="menu_toggle" type="button" class="active" onclick="asideActive();"><span>menu close</span></button>
+                <script>
+                    //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+                    const menuState = getCookie('menuState');
+                    const asideElement = document.getElementById('aside');
+                    const menuToggle = document.getElementById('menu_toggle');
+                    if (menuState === 'open') {
+                        asideElement.classList.add('active');
+                        asideElement.classList.remove('closed');
+                        menuToggle.classList.add('active');
+                    }else if (menuState === 'closed') {
+                        asideElement.classList.remove('active');
+                        asideElement.classList.add('closed');
+                        menuToggle.classList.remove('active');
+                    } 
+                    //메뉴 토글 & 쿠키저장
+                    function asideActive(){
+                        const menuToggle = document.getElementById('menu_toggle');
+                        const asideElement = document.getElementById('aside');
+                        //메뉴 닫기
+                        if(menuToggle.classList.contains('active')){
+                            menuToggle.classList.remove('active');
+                            asideElement.classList.remove('active');
+                            asideElement.classList.add('closed');
+                            setCookie('menuState', 'closed', 0);//쿠키저장
+                        }else{//메뉴 열기
+                            menuToggle.classList.add('active');
+                            asideElement.classList.add('active');
+                            asideElement.classList.remove('closed');
+                            setCookie('menuState', 'open', 0); //쿠키저장
+                        }
+                    }
+                </script>
+            </div>
+            <div class="nav_wrap" data-simplebar>
+                <nav>
+                    <ul>
+                        <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon1_1.svg" class="nav_icon"><span>조합원 정보</span></a>
+                            <ul>
+                                <li><a href="javascript:;" class="active">조합원정보조회</a></li> 
+                                <li><a href="javascript:;">차량정보조회</a></li> 
+                                <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_2.svg" class="nav_icon"><span>수납관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">전체수납대상</a></li> 
+                                <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                                <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                                <li><a href="javascript:;">적재물</a></li> 
+                                <li><a href="javascript:;">종사자재해</a></li> 
+                                <li><a href="javascript:;">가입금</a></li> 
+                                <li><a href="javascript:;">자부담금</a></li> 
+                                <li><a href="javascript:;">추가부담금</a></li> 
+                                <li><a href="javascript:;">수납내역 조회</a></li> 
+                                <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                                <li><a href="javascript:;">실시간승인내역</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_3.svg" class="nav_icon"><span>정산관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">거래내역조회</a></li> 
+                                <li><a href="javascript:;">매입내역조회</a></li> 
+                                <li><a href="javascript:;">입금내역조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_4.svg" class="nav_icon"><span>통계</span></a>
+                            <ul>
+                                <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                                <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_5.svg" class="nav_icon"><span>게시판 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">공지사항</a></li> 
+                                <li><a href="javascript:;">자료실</a></li> 
+                                <li><a href="javascript:;">문의사항</a></li> 
+                                <li><a href="javascript:;">자주묻는질문</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_6.svg" class="nav_icon"><span>연계관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">배치결과</a></li> 
+                                <li><a href="javascript:;">ARS로그조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_7.svg" class="nav_icon"><span>시스템 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">사용자관리</a></li> 
+                                <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                                <li><a href="javascript:;">공통코드관리</a></li> 
+                                <li><a href="javascript:;">KTA통합코드</a></li> 
+                                <li><a href="javascript:;">권한관리</a></li> 
+                                <li><a href="javascript:;">지원관리</a></li> 
+                                <li><a href="javascript:;">메뉴관리</a></li> 
+                                <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                            </ul>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+	</div>
+	<!-- //header -->	
+
+    <div id="content_wrap">
+        <!-- content -->
+        <div id="content">
+            <div class="page">
+                <div class="page_section">
+                    <div class="search_form_wrap">
+                        <div class="display_flex aitem_center">
+                            <h3 class="section_title">입금내역조회</h3>
+                            <div class="ml_auto">
+                                <div class="location">
+                                    <div class="item"><a href="javascript:;" class="home">Home</a></div>
+                                    <div class="item"><a href="javascript:;">조합원 정보</a></div>
+                                    <div class="item"><a href="javascript:;">조합원 정보 조회</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 검색 -->
+                        <div class="search_form">
+                            <div class="form_items">
+                                <div class="item">
+                                    <div class="tit">수납기간</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text" value="2025-03-01" class="datepicker">
+                                        </div> 
+                                        <span class="input_text">-</span>
+                                        <div class="input size_19">
+                                            <input type="text" value="2025-03-21" class="datepicker">
+                                        </div> 
+                                        <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>당일</label>
+                                        <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>2주</label>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">수납말일</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text" class="datepicker">
+                                        </div> 
+                                        <span class="input_text">-</span>
+                                        <div class="input size_19">
+                                            <input type="text" class="datepicker">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">수납종류</div>
+                                    <div class="input_group">
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>자동차공제 통합계약</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>종사자재해</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>적재물</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>가입금</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>자부담금</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>추가분담금</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>카드미결금</label>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">조합원</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">대표자명 </div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">사업자번호</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">수납구분</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <select name="" id="">
+                                                <option value="전체">전체</option>
+                                                <option value="옵션1">옵션11</option>
+                                                <option value="옵션2">옵션22</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">차량번호</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">차대번호</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">결제상태</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">계약지부</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">계약번호</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">카드승인번호 </div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">납부유형 </div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <select name="" id="">
+                                                <option value="전체">전체</option>
+                                                <option value="옵션1">옵션11</option>
+                                                <option value="옵션2">옵션22</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class="btns">
+                                    <button type="button" class="btn1 btn_dark">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 9V15H15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 1.5V10.5M8 10.5L5 7.5M8 10.5L11 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        엑셀다운로드
+                                    </button>
+                                    <button type="button" class="btn1 btn_primary">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M11.5 11.5L14.9999 14.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        조회
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //검색 -->
+                    </div>
+
+
+                    <!-- 리스트 좌우 100% 셀 비율-->
+                    <div class="jq_table jq_table1 tr_hover">
+                       
+                        <table id="list"></table>
+                        <style>
+                            .jq_table1 .ui-jqgrid-bdiv{max-height:615px;overflow-y: auto;}
+                            /*테이블 스크롤 15줄 - 1행 높이 41px  ,41x15 = 615px*/
+                        </style>
+                        <script>
+                        $(function () {
+                            $("#list").jqGrid({
+                            datatype: "local",
+                            colModel: [
+                                { label: ' ', name: 'no', width: 60, sortable: false, align: 'center' },
+                                { label: '선택', name: 'select', width: 65, sortable: false, align: 'center',
+                                    formatter: function() {
+                                        return '<label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>';
+                                    } 
+                                },
+                                { label: '조합원', name: 'owner', width: 200, sortable: true, align: 'center' },
+                                { label: '차량번호', name: 'carNo', width: 160, sortable: true, align: 'center' },
+                                { label: '계약번호', name: 'contractNo', width: 110, sortable: false, align: 'center' },
+                                { label: '수납종류', name: 'payType', width: 160, sortable: false, align: 'center' },
+                                { label: '수납구분', name: 'payCategory', width: 160, sortable: false, align: 'center' },
+                                { label: '계약기간', name: 'contractPeriod', width: 200, sortable: false, align: 'center' },
+                                { label: '납입회차', name: 'installment', width: 130, sortable: false, align: 'center' },
+                                { label: '납부금액', name: 'amount', width: 176, sortable: false, align: 'right' },
+                                { label: '취소가능여부', name: 'cancelable', width: 169, sortable: false, align: 'center' },
+                            ],
+                            data: [
+                                {
+                                    no: '1',
+                                    owner: '대성물류',
+                                    carNo: '전남88바6100',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '2',
+                                    owner: '동서물류',
+                                    carNo: '서울99가1234',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '3',
+                                    owner: '삼성특수화물',
+                                    carNo: '부산77나5678',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '4',
+                                    owner: '신화물류',
+                                    carNo: '대구66다4321',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '5',
+                                    owner: '해운특수화물',
+                                    carNo: '광주55라6789',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '6',
+                                    owner: '바로물류',
+                                    carNo: '인천44마9876',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '7',
+                                    owner: '광진물류',
+                                    carNo: '경기33바1111',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '8',
+                                    owner: '서울특수화물',
+                                    carNo: '전남88바6100',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '9',
+                                    owner: '한강물류',
+                                    carNo: '서울99가1234',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '10',
+                                    owner: '미래특수화물',
+                                    carNo: '부산77나5678',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '11',
+                                    owner: '대한물류',
+                                    carNo: '대구66다4321',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '12',
+                                    owner: '세진특수화물',
+                                    carNo: '광주55라6789',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '13',
+                                    owner: '풍경물류',
+                                    carNo: '인천44마9876',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '14',
+                                    owner: '성공특수화물',
+                                    carNo: '경기33바1111',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '15',
+                                    owner: '건영물류',
+                                    carNo: '전남88바6100',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '16',
+                                    owner: '신한특수화물',
+                                    carNo: '서울99가1234',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '17',
+                                    owner: '에이스물류',
+                                    carNo: '부산77나5678',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '18',
+                                    owner: '유니특수화물',
+                                    carNo: '대구66다4321',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '19',
+                                    owner: '지성물류',
+                                    carNo: '광주55라6789',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '20',
+                                    owner: '하나특수화물',
+                                    carNo: '인천44마9876',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '21',
+                                    owner: '도원물류',
+                                    carNo: '경기33바1111',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '22',
+                                    owner: '올리브특수화물',
+                                    carNo: '전남88바6100',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '23',
+                                    owner: '청운물류',
+                                    carNo: '서울99가1234',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '24',
+                                    owner: '코리아특수화물',
+                                    carNo: '부산77나5678',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '25',
+                                    owner: '삼진물류',
+                                    carNo: '대구66다4321',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '26',
+                                    owner: '대우특수화물',
+                                    carNo: '광주55라6789',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '27',
+                                    owner: '비전물류',
+                                    carNo: '인천44마9876',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '28',
+                                    owner: '선도특수화물',
+                                    carNo: '경기33바1111',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '29',
+                                    owner: '청솔물류',
+                                    carNo: '전남88바6100',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '30',
+                                    owner: '비상특수화물',
+                                    carNo: '서울99가1234',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                }
+                            ],
+                            loadComplete: function() {
+                                var i, names = this.p.colModel, l = names.length;
+                                for (i = 0; i < l; i++) {
+                                    if (names[i].sortable) {
+                                        $(this).jqGrid('setLabel', names[i].name, '', 'use_sort');
+                                    }
+                                }
+                            },
+                            viewrecords: true,
+                            height: "auto",
+                            rowNum: 999999999999999,
+                            autowidth: true,
+                            shrinkToFit: true,
+                            });
+                        });
+
+                        //디자인 스크롤
+                        document.addEventListener("DOMContentLoaded", () => {
+                            setTimeout(() => {
+                                new SimpleBar($('.jq_table1')[0]);
+                                new SimpleBar($('.jq_table1 .ui-jqgrid-bdiv')[0]);
+                            }, 1);
+                        });
+                    </script>
+                    </div>
+                    <!-- //리스트 좌우 100% 셀 비율-->
+
+
+                    <!-- 리스트 셀 지정 값 고정 가로스크롤-->
+                    <div class="jq_table jq_table2 tr_hover">
+                        <table id="list2"></table>
+                        <style>
+                            .jq_table2 .ui-jqgrid-bdiv{max-height:615px;overflow-y: auto;overflow-x: hidden;}
+                            /*테이블 스크롤 15줄 - 1행 높이 41px  ,41x15 = 615px*/
+                        </style>
+                        <script>
+                            $(function () {
+                                $("#list2").jqGrid({
+                                datatype: "local",
+                                colModel: [
+                                    { label: ' ', name: 'no', width: 60, sortable: false, align: 'center' },
+                                    { label: '선택', name: 'select', width: 65, sortable: false, align: 'center',
+                                        formatter: function() {
+                                            return '<label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>';
+                                        } 
+                                    },
+                                    { label: '조합원1', name: 'owner1', width: 200, sortable: true, align: 'center' },
+                                    { label: '조합원2', name: 'owner2', width: 200, sortable: true, align: 'center' },
+                                    { label: '조합원3', name: 'owner3', width: 200, sortable: true, align: 'center' },
+                                    { label: '조합원4', name: 'owner4', width: 200, sortable: true, align: 'center' },
+                                    { label: '조합원5', name: 'owner5', width: 200, sortable: true, align: 'center' },
+                                    { label: '차량번호', name: 'carNo', width: 160, sortable: true, align: 'center' },
+                                    { label: '계약번호', name: 'contractNo', width: 160, sortable: false, align: 'center' },
+                                    { label: '수납종류', name: 'payType', width: 160, sortable: false, align: 'center' },
+                                    { label: '수납구분', name: 'payCategory', width: 160, sortable: false, align: 'center' },
+                                    { label: '계약기간', name: 'contractPeriod', width: 200, sortable: false, align: 'center' },
+                                    { label: '납입회차', name: 'installment', width: 130, sortable: false, align: 'center' },
+                                    { label: '납부금액', name: 'amount', width: 176, sortable: false, align: 'right' },
+                                    { label: '취소가능여부', name: 'cancelable', width: 170, sortable: false, align: 'center' },
+                                ],
+                                data: [
+                                {
+                                    no: '1',
+                                    owner1: '대성물류',
+                                    owner2: '동서물류',
+                                    owner3: '삼성특수화물',
+                                    owner4: '신화물류',
+                                    owner5: '해운특수화물',
+                                    carNo: '전남88바6100',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '2',
+                                    owner1: '신성물류',
+                                    owner2: '미래특수화물',
+                                    owner3: '코리아물류',
+                                    owner4: '동방물류',
+                                    owner5: '서해특수화물',
+                                    carNo: '서울99가1234',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '3',
+                                    owner1: '한강물류',
+                                    owner2: '도원특수화물',
+                                    owner3: '비전물류',
+                                    owner4: '선도특수화물',
+                                    owner5: '청솔물류',
+                                    carNo: '부산77나5678',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '4',
+                                    owner1: '유진물류',
+                                    owner2: '에이스특수화물',
+                                    owner3: '올리브물류',
+                                    owner4: '청운특수화물',
+                                    owner5: '코리아특수화물',
+                                    carNo: '대구66다4321',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '5',
+                                    owner1: '태양물류',
+                                    owner2: '달빛특수화물',
+                                    owner3: '별빛물류',
+                                    owner4: '해바라기물류',
+                                    owner5: '비상특수화물',
+                                    carNo: '광주55라6789',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '6',
+                                    owner1: '미래물류',
+                                    owner2: '하나특수화물',
+                                    owner3: '두산물류',
+                                    owner4: '삼일특수화물',
+                                    owner5: '금강물류',
+                                    carNo: '인천44마9876',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '7',
+                                    owner1: '성공물류',
+                                    owner2: '도약특수화물',
+                                    owner3: '새벽물류',
+                                    owner4: '중앙특수화물',
+                                    owner5: '최강물류',
+                                    carNo: '경기33바1111',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '8',
+                                    owner1: '강산물류',
+                                    owner2: '오름특수화물',
+                                    owner3: '산들물류',
+                                    owner4: '푸른특수화물',
+                                    owner5: '바람물류',
+                                    carNo: '전남88바6100',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                },
+                                {
+                                    no: '9',
+                                    owner1: '하늘물류',
+                                    owner2: '땅특수화물',
+                                    owner3: '구름물류',
+                                    owner4: '비특수화물',
+                                    owner5: '눈물류',
+                                    carNo: '서울99가1234',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_blue_gray">승인취소</span>'
+                                },
+                                {
+                                    no: '10',
+                                    owner1: '바다물류',
+                                    owner2: '해양특수화물',
+                                    owner3: '섬물류',
+                                    owner4: '조개특수화물',
+                                    owner5: '파도물류',
+                                    carNo: '부산77나5678',
+                                    contractNo: '1234567890123',
+                                    payType: '자동자공제 통합계약',
+                                    payCategory: '분담금',
+                                    contractPeriod: '2025.01.01~2025.01.01',
+                                    installment: '6',
+                                    amount: '369,010',
+                                    cancelable: '<span class="btn2 btn_red">승인실패</span>'
+                                }
+                                ],
+                                loadComplete: function() {
+                                    var i, names = this.p.colModel, l = names.length;
+                                    for (i = 0; i < l; i++) {
+                                        if (names[i].sortable) {
+                                            $(this).jqGrid('setLabel', names[i].name, '', 'use_sort');
+                                        }
+                                    }
+                                },
+                                viewrecords: true,
+                                height: "auto",
+                                rowNum: 999999999999999,
+                                //autowidth: true, //true면 화면 셀자동  false면 세팅한 셀 너비
+                                });
+                            });
+                            //디자인 스크롤
+                            document.addEventListener("DOMContentLoaded", () => {
+                                setTimeout(() => {
+                                    new SimpleBar($('.jq_table2')[0]);
+                                    new SimpleBar($('.jq_table2 .ui-jqgrid-bdiv')[0]);
+                                }, 1);
+                            });
+                        </script>
+                    </div>
+                    <!-- //리스트 셀 지정 값 고정 가로스크롤 -->
+
+                    <div class="table_list table_xs border_gray">
+                        <table class="label_control">
+                            <colgroup>
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>차량(건)</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                    <th>계약(건)</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                    <th>납부총액</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table_list table_xs border_gray">
+                        <table class="label_control">
+                            <colgroup>
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                                <col style="width: 16.666%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>대인 Ⅰ 총액</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                    <th>일반 총액</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                    <td class="align_right" colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <th>차량(건)</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                    <th>계약(건)</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                    <th>납부총액</th>
+                                    <td class="align_right"><strong class="text_red">0</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="btn_box">
+                        <div>
+                            <strong class="text_blue">전체 10277건 /</strong><label class="checkbox ml_5"><input type="checkbox"><span class="ck_icon"></span>현재 조회된 계약에 대해 전체 납부합니다.</label>
+                        </div>
+                        <div class="r btns">
+                            <button type="button" class="btn1 btn_primary_outline">수납등록</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- //content -->
+        <div id="footer">
+            <div class="copy">COPYRIGHTⒸ KTA. All RIGHTS RESERVED. 2017</div>
+            <div class="ver">Version 1.0.0</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>	 

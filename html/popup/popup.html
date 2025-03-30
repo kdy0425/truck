@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>화물공제분담금</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/toastify.min.css" />
+<link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+<link rel="stylesheet" href="../../assets/css/simplebar.css" />
+<link href="../../assets/css/choices.css" rel="stylesheet"/>
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="../../assets/js/simplebar.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/pikaday.js"></script>
+<script src="../../assets/js/inputmask.js"></script>
+<script src="../../assets/js/toastify-js.js"></script>
+<script src="../../assets/js/choices.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">화물공제분담금</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+    <div id="header">
+        <div id="logo">
+            <a href="../main/main.html"><img src="../../assets/images/logo.png" alt="KTA 화물공제분담금 신용카드수납시스템" style="height: 2.5rem;"></a>
+        </div>
+        <div class="hd_nav">
+            <nav id="nav">
+                <ul>
+                    <li class="on"><a href="javascript:;">조합원 정보</a></li>
+                    <li><a href="javascript:;">수납관리</a></li>
+                    <li><a href="javascript:;">정산관리</a></li>
+                    <li><a href="javascript:;">통계</a></li>
+                    <li><a href="javascript:;">게시판관리</a></li>
+                    <li><a href="javascript:;">연계관리</a></li>
+                    <li><a href="javascript:;">시스템관리</a></li>
+                </ul>
+            </nav>
+            <div class="nav_inner" style="display: none;">
+                <div class="title">
+                    <strong>전체메뉴</strong>
+                    <p>전체 시스템 메뉴를 한눈에<br/>
+                        보실 수 있습니다.</p>
+                </div>
+                <ul>
+                    <li class="on">
+                        <ul>
+                            <li><a href="javascript:;" class="on">조합원정보조회</a></li> 
+                            <li><a href="javascript:;">차량정보조회</a></li> 
+                            <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">전체수납대상</a></li> 
+                            <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                            <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                            <li><a href="javascript:;">적재물</a></li> 
+                            <li><a href="javascript:;">종사자재해</a></li> 
+                            <li><a href="javascript:;">가입금</a></li> 
+                            <li><a href="javascript:;">자부담금</a></li> 
+                            <li><a href="javascript:;">추가부담금</a></li> 
+                            <li><a href="javascript:;">수납내역 조회</a></li> 
+                            <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                            <li><a href="javascript:;">실시간승인내역</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">거래내역조회</a></li> 
+                            <li><a href="javascript:;">매입내역조회</a></li> 
+                            <li><a href="javascript:;">입금내역조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                            <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">공지사항</a></li> 
+                            <li><a href="javascript:;">자료실</a></li> 
+                            <li><a href="javascript:;">문의사항</a></li> 
+                            <li><a href="javascript:;">자주묻는질문</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">배치결과</a></li> 
+                            <li><a href="javascript:;">ARS로그조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">사용자관리</a></li> 
+                            <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                            <li><a href="javascript:;">공통코드관리</a></li> 
+                            <li><a href="javascript:;">KTA통합코드</a></li> 
+                            <li><a href="javascript:;">권한관리</a></li> 
+                            <li><a href="javascript:;">지원관리</a></li> 
+                            <li><a href="javascript:;">메뉴관리</a></li> 
+                            <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="header_links">
+            <div class="item">
+                <span class="text"><strong>관리자</strong> (000-0000-0000)</span>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">로그아웃</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">회원정보변경</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="green">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9019 3.16667H2.09762C1.42994 3.16667 0.888672 3.7016 0.888672 4.36148V12.1592C0.888672 12.8191 1.42994 13.354 2.09762 13.354H13.9019C14.5696 13.354 15.1109 12.8191 15.1109 12.1592V4.36148C15.1109 3.7016 14.5696 3.16667 13.9019 3.16667Z" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.888672 9.72917H15.1109" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.9824 5.85243H12.7667" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <strong>사용카드등록</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
+	<div id="aside" class="active">
+        <div class="aside_inner">
+            <div class="toggle_button_box">
+                <button id="menu_toggle" type="button" class="active" onclick="asideActive();"><span>menu close</span></button>
+                <script>
+                    //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+                    const menuState = getCookie('menuState');
+                    const asideElement = document.getElementById('aside');
+                    const menuToggle = document.getElementById('menu_toggle');
+                    if (menuState === 'open') {
+                        asideElement.classList.add('active');
+                        asideElement.classList.remove('closed');
+                        menuToggle.classList.add('active');
+                    }else if (menuState === 'closed') {
+                        asideElement.classList.remove('active');
+                        asideElement.classList.add('closed');
+                        menuToggle.classList.remove('active');
+                    } 
+                    //메뉴 토글 & 쿠키저장
+                    function asideActive(){
+                        const menuToggle = document.getElementById('menu_toggle');
+                        const asideElement = document.getElementById('aside');
+                        //메뉴 닫기
+                        if(menuToggle.classList.contains('active')){
+                            menuToggle.classList.remove('active');
+                            asideElement.classList.remove('active');
+                            asideElement.classList.add('closed');
+                            setCookie('menuState', 'closed', 0);//쿠키저장
+                        }else{//메뉴 열기
+                            menuToggle.classList.add('active');
+                            asideElement.classList.add('active');
+                            asideElement.classList.remove('closed');
+                            setCookie('menuState', 'open', 0); //쿠키저장
+                        }
+                    }
+                </script>
+            </div>
+            <div class="nav_wrap" data-simplebar>
+                <nav>
+                    <ul>
+                        <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon1_1.svg" class="nav_icon"><span>조합원 정보</span></a>
+                            <ul>
+                                <li><a href="javascript:;" class="active">조합원정보조회</a></li> 
+                                <li><a href="javascript:;">차량정보조회</a></li> 
+                                <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_2.svg" class="nav_icon"><span>수납관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">전체수납대상</a></li> 
+                                <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                                <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                                <li><a href="javascript:;">적재물</a></li> 
+                                <li><a href="javascript:;">종사자재해</a></li> 
+                                <li><a href="javascript:;">가입금</a></li> 
+                                <li><a href="javascript:;">자부담금</a></li> 
+                                <li><a href="javascript:;">추가부담금</a></li> 
+                                <li><a href="javascript:;">수납내역 조회</a></li> 
+                                <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                                <li><a href="javascript:;">실시간승인내역</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_3.svg" class="nav_icon"><span>정산관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">거래내역조회</a></li> 
+                                <li><a href="javascript:;">매입내역조회</a></li> 
+                                <li><a href="javascript:;">입금내역조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_4.svg" class="nav_icon"><span>통계</span></a>
+                            <ul>
+                                <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                                <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_5.svg" class="nav_icon"><span>게시판 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">공지사항</a></li> 
+                                <li><a href="javascript:;">자료실</a></li> 
+                                <li><a href="javascript:;">문의사항</a></li> 
+                                <li><a href="javascript:;">자주묻는질문</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_6.svg" class="nav_icon"><span>연계관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">배치결과</a></li> 
+                                <li><a href="javascript:;">ARS로그조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_7.svg" class="nav_icon"><span>시스템 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">사용자관리</a></li> 
+                                <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                                <li><a href="javascript:;">공통코드관리</a></li> 
+                                <li><a href="javascript:;">KTA통합코드</a></li> 
+                                <li><a href="javascript:;">권한관리</a></li> 
+                                <li><a href="javascript:;">지원관리</a></li> 
+                                <li><a href="javascript:;">메뉴관리</a></li> 
+                                <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                            </ul>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+	</div>
+	<!-- //header -->	
+
+    <div id="content_wrap">
+        <!-- content -->
+        <div id="content">
+            <div class="page">
+
+                <div class="btns" style="margin:5rem">
+                    <button type="button" onclick="openLayer('#popup1')">그룹코드조회</button>
+                    <button type="button" onclick="openLayer('#popup2')">납부/관리정보</button>
+                    <button type="button" onclick="openLayer('#popup3')">가맹점등록</button>
+                    <button type="button" onclick="openLayer('#popup4')">개인정보활용 동의</button>
+                    <button type="button" onclick="openLayer('#popup5')">납부유형등록</button>
+                    <button type="button" onclick="openLayer('#popup6')">자주쓰는카드 설정</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- //content -->
+        <div id="footer">
+            <div class="copy">COPYRIGHTⒸ KTA. All RIGHTS RESERVED. 2017</div>
+            <div class="ver">Version 1.0.0</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 그룹코드조회 -->
+<div id="popup1" class="layer_popup" role="dialog">
+    <div class="layer_box" style="width:80rem;" role="document">
+        <div class="layer_header">
+            <h5 class="layer_title">그룹코드조회</h5>
+            <button type="button" class="layer_close modal_close" onclick="closeLayer(this);">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="layer_content">
+                <div class="popup_section">
+                    <div class="ps_title">
+                        <h6 class="square_title">그룹코드조회</h6>
+                    </div>
+                    <div class="search_form_wrap">
+                        <div class="search_form">
+                            <div class="form_items">
+                                <div class="item">
+                                    <div class="input_group">
+                                        <div class="input size_16">
+                                            <select name="" id="">
+                                                <option value="">그룹코드</option>
+                                                <option value="코드1">코드1</option>
+                                                <option value="코드2">코드2</option>
+                                            </select>
+                                        </div> 
+                                        <div class="input size_16">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <button type="button" class="btn1 btn_primary">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M11.5 11.5L14.9999 14.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        조회
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 리스트 -->
+                    <div class="table_list table_scroll tr_hover">
+                        <div class="scroll_thead">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 80px;">
+                                    <col style="width: 110px;">
+                                    <col style="width: 305px;">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>선택</th>
+                                        <th>번호</th>
+                                        <th>그룹코드</th>
+                                        <th>그룹코드명</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="scroll_tbody" style="max-height: 60.1rem;" data-simplebar>
+                            <table>
+                                <colgroup>
+                                    <col style="width: 80px;">
+                                    <col style="width: 110px;">
+                                    <col style="width: 305px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>1</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>2</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>3</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>4</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>5</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>6</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>7</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>8</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>9</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>10</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>11</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>12</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>13</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>14</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>15</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>16</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>17</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>18</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //리스트 -->
+
+                    <!-- 페이징 -->
+                    <div class="paging_box">
+                        <div class="paging">
+                            <a href="javascript:;" id="paging_prev" class="pg prev disabled">이전 페이지</a>
+                            <a href="javascript:;" id="paging_prev" class="pg prev">이전 페이지</a>
+                            <a href="javascript:;" id="paging_1">1</a>
+                            <a href="javascript:;" id="paging_3" class="active" title="선택됨">2</a>
+                            <a href="javascript:;" id="paging_3">3</a>
+                            <a href="javascript:;" id="paging_4">4</a>
+                            <a href="javascript:;" id="paging_5">5</a>
+                            <a href="javascript:;" id="paging_next" class="pg next">다음 페이지</a>
+                            <a href="javascript:;" id="paging_next" class="pg next disabled">다음 페이지</a>
+                        </div>
+                    </div>
+                    <!-- //페이징 -->
+                </div>
+                <div class="layer_btns">
+                    <button type="button" class="btn3 btn_primary" onclick="closeLayer(this);">등록</button>
+                    <button type="button" class="btn3 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg modal_close"></span>
+</div>
+<!-- //그룹코드조회 -->
+
+
+
+<!-- 납부/관리정보 -->
+<div id="popup2" class="layer_popup" role="dialog">
+    <div class="layer_box" style="width:80rem;" role="document">
+        <div class="layer_header">
+            <h5 class="layer_title">납부/관리정보</h5>
+            <button type="button" class="layer_close modal_close" onclick="closeLayer(this);">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="layer_content">
+                <div class="popup_section">
+                    <div class="ps_title">
+                        <h6 class="square_title">납부정보</h6>
+                    </div>
+                    <div class="table_list table_form table_sm">
+                        <table class="label_control">
+                            <colgroup>
+                                <col style="width: 120px;">
+                                <col style="width: 120px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">조합원</th>
+                                    <td><b class="text_blue">(유)만물화물운수사</b></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">계약종류</th>
+                                    <td>자부담금/일반</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">기준 유효기간</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th>항목</th>
+                                    <th>적재물</th>
+                                    <td>1 건 <span class="slash">/</span> 300,000 원</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">납부총액(대상건수)</th>
+                                    <td><b class="text_red">1</b> 건 <span class="slash">/</span> <b class="text_red">300,000</b> 원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="popup_section">
+                    <div class="ps_title">
+                        <h6 class="square_title">카드정보</h6>
+                    </div>
+                    <div class="table_list table_form table_sm">
+                        <table class="label_control">
+                            <colgroup>
+                                <col style="width: 120px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>성명</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input size_16">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이메일</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input size_16">
+                                                <input type="text">
+                                            </div>
+                                            <div class="input_text">@</div>
+                                            <div class="input size_16">
+                                                <input type="text" id="email_second">
+                                            </div>
+                                            <div class="input size_16">
+                                                <select name="" id="email_select">
+                                                    <option value="">직접입력</option>
+                                                    <option value="gmail.com">gmail.com</option>
+                                                    <option value="naver.com">naver.com</option>
+                                                    <option value="daum.net">daum.net</option>
+                                                    <option value="nate.com">nate.com</option>
+                                                </select>
+                                            </div>
+                                            <div class="input_text"><em><span class="text_red">＊</span><span class="text_gray">선택사항</span></em></div>
+                                        </div>
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function() {
+                                            const domainInput = document.querySelector('#email_second');
+                                            const domainSelect = document.querySelector('#email_select');
+                                        
+                                            domainSelect.addEventListener("change", function() {
+                                                const selectedText = domainSelect.options[domainSelect.selectedIndex].text;
+                                                if(selectedText === "직접입력") {
+                                                domainInput.value = "";
+                                                domainInput.disabled = false;
+                                                domainInput.focus();
+                                                } else {
+                                                domainInput.value = selectedText;
+                                                domainInput.disabled = true;
+                                                }
+                                            });
+                                            });
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>연락처</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input size_8">
+                                                <select name="" id="">
+                                                    <option value="">전체</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                            <div class="input_text">-</div>
+                                            <div class="input size_8">
+                                                <input type="text">
+                                            </div>
+                                            <div class="input_text">-</div>
+                                            <div class="input size_8">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>카드사</th>
+                                    <td>KB국민카드</td>
+                                </tr>
+                                <tr>
+                                    <th>결제수단</th>
+                                    <td>
+                                        <img src="../../assets/images/content/kb_pay.png" alt="KB Pay">
+                                        <button type="button" class="btn_img">
+                                            <img src="../../assets/images/content/card_number.png" alt="카드번호 직접입력">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>할부</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input size_16">
+                                                <select name="">
+                                                    <option value="일시납">일시납</option>
+                                                    <option value="옵션명2">옵션명2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>결제금액</th>
+                                    <td><b>300,000</b> 원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="layer_btns">
+                    <button type="button" class="btn3 btn_primary" onclick="closeLayer(this);">결제</button>
+                    <button type="button" class="btn3 btn_dark_outline" onclick="closeLayer(this);">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg modal_close"></span>
+</div>
+<!-- //납부/관리정보 -->
+
+
+<!-- 가맹점등록 -->
+<div id="popup3" class="layer_popup" role="dialog">
+    <div class="layer_box" style="width:100rem;" role="document">
+        <div class="layer_header">
+            <h5 class="layer_title">가맹점등록</h5>
+            <button type="button" class="layer_close modal_close" onclick="closeLayer(this);">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="layer_content">
+                <div class="popup_section">
+                    <div class="ps_title">
+                        <h6 class="square_title">가맹점등록</h6>
+                    </div>
+                    <div class="table_list table_form table_sm">
+                        <table class="label_control">
+                            <colgroup>
+                                <col style="width: 120px;">
+                                <col style="width: calc(50% - 120px);">
+                                <col style="width: 120px;">
+                                <col style="width: calc(50% - 120px);">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>지부</th>
+                                    <td colspan="3">
+                                        <div class="input_group">
+                                            <div class="input size_16">
+                                                <select name="">
+                                                    <option value="서울">서울</option>
+                                                    <option value="옵션명1">옵션명1</option>
+                                                    <option value="옵션명2">옵션명2</option>
+                                                    <option value="옵션명3">옵션명3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>카드사</th>
+                                    <td>KB국민카드</td>
+                                    <th>가맹점번호</th>
+                                    <td>8279568</td>
+                                </tr>
+                                <tr>
+                                    <th>가맹점명</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input">
+                                                <input type="text" value="전국화물자동차공제조합 서울지부">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>사업자번호</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input size_8">
+                                                <select name="" id="">
+                                                    <option value=""></option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                            <div class="input_text">-</div>
+                                            <div class="input size_8">
+                                                <input type="text">
+                                            </div>
+                                            <div class="input_text">-</div>
+                                            <div class="input size_8">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input size_8">
+                                                <select name="" id="">
+                                                    <option value="">전체</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                            <div class="input_text">-</div>
+                                            <div class="input size_8">
+                                                <input type="text">
+                                            </div>
+                                            <div class="input_text">-</div>
+                                            <div class="input size_8">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>상세주소</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input">
+                                                <input type="text" value="서울특별시 송파구 올림픽로 319번지 교통회관 9층">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>사용여부</th>
+                                    <td colspan="3">
+                                        <div class="input_group">
+                                            <div class="input size_16">
+                                                <select name="">
+                                                    <option value="사용">사용</option>
+                                                    <option value="옵션명2">옵션명2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="layer_btns">
+                    <button type="button" class="btn3 btn_primary" onclick="closeLayer(this);">수정</button>
+                    <button type="button" class="btn3 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg modal_close"></span>
+</div>
+<!-- //가맹점등록 -->
+
+
+<!-- 개인정보활용 동의 -->
+<div id="popup4" class="layer_popup" role="dialog">
+    <div class="layer_box" style="width:80rem;" role="document">
+        <div class="layer_header">
+            <h5 class="layer_title">개인정보활용 동의</h5>
+            <button type="button" class="layer_close modal_close" onclick="closeLayer(this);">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="layer_content">
+                <div class="popup_section">
+                    <div class="terms_wrap label_control">
+                        <div class="margin_box terms_scroll" style="max-height:calc(100svh - 31rem);overflow-y: auto;" data-simplebar>
+                            <div class="terms_group">
+                                <div class="ps_title mg_sm">
+                                    <h6 class="square_title">개인정보수집동의 및 이용에 대한 동의</h6>
+                                </div>
+                                <p>전국화물자동차공제조합(이하 조합)이 개인정보를 수집∙이용하고자 하는 경우에는 개인정보보호법 제15조 및 제22조에 따라 동의를 받아야 합니다. 이에 본인은 조합이 아래의 내용과 같이 개인정보를 수집∙이용하는 데 동의합니다.<br/>
+                                필수정보 동의를 거부하시는 경우에는 신용카드를 이용한 분담금 결제가 불가능함을 알려드립니다.<br/>
+                                개인정보 수집·이용에 동의한 후에 조합담당자를 통하여 이를 철회하거나 열람, 정정, 삭제를 요구할 수 있습니다.</p>
+                                <div class="terms_checks">
+                                    <div class="item">
+                                        <div class="top">
+                                            <button type="button" class="subject" onclick="toggleClass(this);slideToggle('#slide_content1')">1. 개인정보의 수집 및 이용 목적 </button>
+                                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>동의</label>
+                                        </div>
+                                        <div class="bottom" id="slide_content1">
+                                            <div class="terms_gray_text">
+                                                <p><em>1) 본인확인</em><br/>
+                                                서비스 이용에 따른 본인확인, 개인식별, 결제 정보의 안전을 위한 본인확인 및 거래 확인, 부정이용 방지와 비정상 사용 방지, 회원불만 접수 및 처리, 분쟁조정을 위한 기록보존, 고지사항 전달</p>
+                                                <p><em>2) 결제</em><br/>
+                                                본인 명의로 발행된 결제수단 인증, 결제 업무 처리
+                                                유효한 결제수단 여부 확인 (결제카드 가능여부, 이용 정지, 한도 초과 등의 거래 제한 결제수단 등록 불가)</p>
+                                                <p><em>3) 고객센터</em><br/>
+                                                고객센터 운영 (ARS 및 대표 이메일)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="top">
+                                            <button type="button" class="subject" onclick="toggleClass(this);slideToggle('#slide_content2_1')">2.1. [필수]개인정보의 수집 및 이용 목적</button>
+                                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>동의</label>
+                                        </div>
+                                        <div class="bottom" id="slide_content2_1">
+                                            <div class="terms_gray_text">
+                                                <p><em>1) 본인확인</em><br/>
+                                                    성명, 휴대폰 번호, 아이디, 비밀번호, 연계정보(DI), 통신사, 차량번호, 조합원사명, 사업자등록번호</p>
+                                                <p><em>2) 결제</em><br/>
+                                                    신용카드 정보(카드종류, 신용카드번호, 유효기간, 비밀번호2자리)</p>
+                                                <p><em>3) 서비스 이용과정이나 사업처리 과정에서 자동으로 생성/수집</em><br/>
+                                                    결제내역 및 접속기록</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="top">
+                                            <button type="button" class="subject" onclick="toggleClass(this);slideToggle('#slide_content2_2')">2.2. [선택]수집하는 개인정보의 항목정보</button>
+                                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>동의</label>
+                                        </div>
+                                        <div class="bottom" id="slide_content2_2">
+                                            <div class="terms_gray_text">
+                                                <p><em>1) 마케팅 활용 (공제상품, 장학사업, 화물운전자의 날 행사, 안전운전 홍보, 공제사보, 기타복지사업 등 유익한 정보 제공)</em><br/>
+                                                    성명, 휴대폰 번호, 이메일</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="top">
+                                            <button type="button" class="subject" onclick="toggleClass(this);slideToggle('#slide_content3')">3. 개인정보의 보유 및 이용기간</button>
+                                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>동의</label>
+                                        </div>
+                                        <div class="bottom" id="slide_content3">
+                                            <div class="terms_gray_text">
+                                                <p><em>1) 사용자(조합원 담당자, 위수탁차주)의 개인정보는 본 조합이 사용자에게 서비스를 제공하는 기간 동안에 보유 및 이용됩니다.</em><br/>
+                                                    서비스 해지 시 수집된 개인의 정보가 열람 또는 이용될 수 없도록 파기 처리됩니다.<br/>
+                                                    다만, 관계법령의 규정에 의하여 보존할 필요성이 있는 경우에는 관계법령에 따라 보존합니다.</p>
+                                                <p><em>2) 상법 및 전자상거래 등에서 소비자보호에 관한 법률 등 관련 법령의 규정에 의하여 보존할 필요가 있을 경우</em><br/>
+                                                    본 조합은 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.</p>
+                                                <p>- 수집·이용 동의일로부터 거래종료 후 5년까지 (단, 거래종료 후 5년이 경과한 후에는 가입금 환급, 금융사고 조사, 보험사기 방지·적발, 민원처리,
+                                                    법령상 의무 이행을 위한 경우에 한하여) 보유·이용하며, 별도 보관합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="top">
+                                            <button type="button" class="subject" onclick="toggleClass(this);slideToggle('#slide_content4')">4. 미동의 시 불이익 사항</button>
+                                            <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>동의</label>
+                                        </div>
+                                        <div class="bottom" id="slide_content4">
+                                            <div class="terms_gray_text">
+                                                <p>필수항목 미동의 시, 신용카드를 이용한 분담금 결제 시 제약사항이 발생할 수 있습니다.<br/>
+                                                    이에 본인은 조합이 위의 내용과 같이 개인정보를 수집∙이용하는 데 동의합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="terms_group">
+                                <div class="ps_title mg_sm">
+                                    <button type="button" class="square_title" onclick="toggleClass(this);slideToggle('#slide_content_group2')">약관 교부 및 중요내용 설명에 관한 사항</button>
+                                    <div class="r">
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>동의</label>
+                                    </div>
+                                </div>
+                                <div id="slide_content_group2" class="slide_content" style="display: none;">
+                                    <div class="terms_gray_grid">
+                                        <div class="item">
+                                            <div class="tit">자동차공제 보통약관</div>
+                                            <p>제3조~제8조 (대인배상 Ⅰ·Ⅱ, 대물배상)<br/>
+                                            보상하는 손해, 조합원, 보상하지 않은 손해<br/>
+                                            제10조 (대인배상 Ⅰ·Ⅱ, 대물배상) 지급공제금의 계산<br/>
+                                            제12조 ~ 제26조 (자기신체사고, 종사자재해, 자기차량손해)<br/>
+                                            보상하는 손해, 조합원, 보상하지 않는 손해 <br/>
+                                            공제금의 종류와 한도, 지급공제금의 계산<br/>
+                                            제44조 공제기간</p>
+                                            <a href="javascript:;" class="btn_more">자세히보기</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="tit">자동차공제 보통약관</div>
+                                            <p>제1편 제1장 분담금 분할납입 특별약관<br/>
+                                            <span class="text_red">제1편 제2장 신용카드 이용 분담금 납입 특별약관</span><br/>
+                                            제2편 제1장 기명조합원 1인 한정운전 특별약관<br/>
+                                            제3편 제1장 기계장치에 관한 「자기차량손해」 특별약관<br/>
+                                            제4편 제1장 법률비용지원 특별약관</p>
+                                            <a href="javascript:;" class="btn_more">자세히보기</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="tit">적재물공제 보통약관</div>
+                                            <p>제4조(조합의 책임의 시기 및 종기)<br/>
+                                                제30조 및 제37조(보상하는 손해)<br/>
+                                                제31조 및 제38조(제외 수탁화물)<br/>
+                                                제32조 및 제39조(보상하지 아니하는 손해)</p>
+                                            <a href="javascript:;" class="btn_more">자세히보기</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="tit">자동차공제 보통약관</div>
+                                            <p>분담금 분납 특별약관<br/>
+                                            <span class="text_red">신용카드 이용 분담금 납입 특별약관</span><br/>
+                                            구간운송 특별약관<br/>
+                                            화물운송부수업무 담보 특별약관<br/>
+                                            수탁화물확장담보 특별약관(Ⅰ·Ⅱ)<br/>
+                                            온도조절장치담보 특별약관<br/>
+                                            안심운송 특별약관</p>
+                                            <a href="javascript:;" class="btn_more">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="terms_group"> 
+                                <div class="ps_title mg_sm">
+                                    <h6 class="square_title">보험계약 동의</h6>
+                                    <div class="r">
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>동의</label>
+                                    </div>
+                                </div>
+                                <p><b>중요사항 안내 (위수탁 차주 결제시)</b><br/>
+                                우리조합은 『공제규정』 제6조(공제가입 및 계약)에 의거 협회의 회원 자격을 가진 <b>화물자동차운송사업자를 공제계약의 당사자(기명조합원)</b>로 공제계약을 체결하고 있습니다.</p>
+                                <p><b>『신용카드 이용 분담금 납입 특별약관』 제2조에 따라 위수탁계약상의 <span class="text_red text_underline">위수탁차주</span><span class="text_underline">는 자기 명의의 카드로 분담금을</span></b> 납입한 경우라도
+                                <b class="text_red text_underline">공제계약의 당사자가 되지 않습니다.</b></p>
+                                <p><span class="text_red">공제계약에 따른 분담금의 해지, 환급 등의 제반 권리와 의무는 자동차등록증상의 소유자에게 있음을 사전에 알려드리며,</span><br/>
+                                보다 자세한 사항은 화물공제조합 홈페이지(<a href="http://www.truck.or.kr" target="_blank" class="terms_link">http://www.truck.or.kr</a>)에서 확인하여 주시기 바랍니다.</p>
+                                <p>상기 내용을 확인하였으며 결제에 동의합니다.</p>
+                            </div>
+                        </div>
+                        <div class="terms_all">
+                            <label class="checkbox"><input type="checkbox" class="check_all"><span class="ck_icon"></span>전체동의</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_btns mt_20">
+                    <button type="button" class="btn4 btn_primary" onclick="closeLayer(this);">확인</button>
+                    <button type="button" class="btn4 btn_dark_outline" onclick="closeLayer(this);">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg modal_close"></span>
+</div>
+<!-- //개인정보활용 동의 -->
+
+<!-- 납부유형등록 -->
+<div id="popup5" class="layer_popup" role="dialog">
+    <div class="layer_box" style="width:60rem;" role="document">
+        <div class="layer_header">
+            <h5 class="layer_title">납부유형등록</h5>
+            <button type="button" class="layer_close modal_close" onclick="closeLayer(this);">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="layer_content">
+                <div class="popup_section">
+                    <div class="ps_title mg_sm">
+                        <h6 class="square_title">납부유형등록</h6>
+                    </div>
+
+                    <div class="margin_box">
+                        <div class="gray_box">
+                            <em>※ 안내사항</em>
+                            <ul class="dash">
+                                <li>- 카드미사용 : 해당차량에 대한 분담금을 <span class="text_red">카드로 결제하지 않습니다.</span></li>
+                                <li>- 카드결제(조합원사) : 해당차량에 대한 분담금을 <span class="text_red">조합원사가 법인카드 또는 대표자명의카드로 결제</span>합니다.</li>
+                                <li>- 카드결제(위·수탁차주) : 해당차량에 대한 분담금을 <span class="text_red">위·수탁차주가 본인의 유류구매카드(유가보조금)로 결제</span>합니다.</li>
+                            </ul>
+                            <ul class="star">
+                                <li>* 납부유형을 <span class="text_red">‘카드결제(위·수탁차주)’로 설정 시</span> 해당차량에 대해<br/> <span class="text_red">조합원사는 위·수탁차주가 직접 분담금을 결제하는 것에 동의한 것</span>으로 봅니다.</li>
+                            </ul>
+                        </div>
+    
+                        <div class="table_list table_form table_sm">
+                            <table class="label_control">
+                                <colgroup>
+                                    <col style="width: 120px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>납부유형</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_16">
+                                                    <select name="">
+                                                        <option value="">------ 선택 ------</option>
+                                                        <option value="옵션명1">옵션명1</option>
+                                                        <option value="옵션명2">옵션명2</option>
+                                                        <option value="옵션명3">옵션명3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_btns">
+                    <button type="button" class="btn4 btn_primary" onclick="closeLayer(this);">등록</button>
+                    <button type="button" class="btn4 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg modal_close"></span>
+</div>
+<!-- //납부유형등록 -->
+
+
+<!-- 자주쓰는카드 설정 -->
+<div id="popup6" class="layer_popup" role="dialog">
+    <div class="layer_box" style="width:60rem;" role="document">
+        <div class="layer_header">
+            <h5 class="layer_title">자주쓰는카드 설정</h5>
+            <button type="button" class="layer_close modal_close" onclick="closeLayer(this);">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="layer_content">
+                <div class="popup_section">
+                    <div class="ps_title mg_sm">
+                        <h6 class="square_title">카드정보</h6>
+                        <div class="r">
+                            <a href="javascript:;" class="btn_text text_blue">
+                                <svg width="16" height="16" stroke="currentColor" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.9039 2.66666H2.09957C1.43189 2.66666 0.890625 3.20159 0.890625 3.86147V11.6592C0.890625 12.3191 1.43189 12.854 2.09957 12.854H13.9039C14.5716 12.854 15.1128 12.3191 15.1128 11.6592V3.86147C15.1128 3.20159 14.5716 2.66666 13.9039 2.66666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.890625 9.22916H15.1128" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.9844 5.35242H12.7686" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>카드등록</span>
+                                <svg width="12" height="12" stroke="currentColor" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 6L10 6" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M6 10L6 2" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="margin_box">
+                        <div class="table_list tr_hover">
+                            <table class="label_control">
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col style="width: 100px;">
+                                    <col>
+                                    <col style="width: 100px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>카드이름</th>
+                                        <th>카드유형</th>
+                                        <th>카드번호</th>
+                                        <th>수정/삭제</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>테스트카드 01</td>
+                                        <td>법인</td>
+                                        <td>1234-XXXX-XXXX-XXXX</td>
+                                        <td>
+                                            <button type="button" class="btn_icon modify">
+                                                <span class="sound_only">수정</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.262 2.476h-4.87A1.391 1.391 0 0 0 1 3.867v9.741A1.392 1.392 0 0 0 2.391 15h9.74a1.391 1.391 0 0 0 1.392-1.392v-4.87" /><path d="M12.481 1.432a1.476 1.476 0 1 1 2.087 2.088l-6.61 6.61-2.782.695.696-2.783 6.609-6.61Z" /></g><defs><clipPath id="a"><path fill="#fff" style="fill:#fff;fill-opacity:1" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                                            </button>
+                                            <button type="button" class="btn_icon remove">
+                                                <span class="sound_only">삭제</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.8h12.6M13.202 3.8v9.8a1.4 1.4 0 0 1-1.4 1.4h-7a1.4 1.4 0 0 1-1.4-1.4V3.8m2.1 0V2.4a1.4 1.4 0 0 1 1.4-1.4h2.8a1.4 1.4 0 0 1 1.4 1.4v1.4M6.898 7.3v4.2M9.7 7.3v4.2" stroke="currentColor"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>테스트카드 01</td>
+                                        <td>법인</td>
+                                        <td>1234-XXXX-XXXX-XXXX</td>
+                                        <td>
+                                            <button type="button" class="btn_icon modify">
+                                                <span class="sound_only">수정</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.262 2.476h-4.87A1.391 1.391 0 0 0 1 3.867v9.741A1.392 1.392 0 0 0 2.391 15h9.74a1.391 1.391 0 0 0 1.392-1.392v-4.87" /><path d="M12.481 1.432a1.476 1.476 0 1 1 2.087 2.088l-6.61 6.61-2.782.695.696-2.783 6.609-6.61Z" /></g><defs><clipPath id="a"><path fill="#fff" style="fill:#fff;fill-opacity:1" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                                            </button>
+                                            <button type="button" class="btn_icon remove">
+                                                <span class="sound_only">삭제</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.8h12.6M13.202 3.8v9.8a1.4 1.4 0 0 1-1.4 1.4h-7a1.4 1.4 0 0 1-1.4-1.4V3.8m2.1 0V2.4a1.4 1.4 0 0 1 1.4-1.4h2.8a1.4 1.4 0 0 1 1.4 1.4v1.4M6.898 7.3v4.2M9.7 7.3v4.2" stroke="currentColor"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>테스트카드 01</td>
+                                        <td>법인</td>
+                                        <td>1234-XXXX-XXXX-XXXX</td>
+                                        <td>
+                                            <button type="button" class="btn_icon modify">
+                                                <span class="sound_only">수정</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.262 2.476h-4.87A1.391 1.391 0 0 0 1 3.867v9.741A1.392 1.392 0 0 0 2.391 15h9.74a1.391 1.391 0 0 0 1.392-1.392v-4.87" /><path d="M12.481 1.432a1.476 1.476 0 1 1 2.087 2.088l-6.61 6.61-2.782.695.696-2.783 6.609-6.61Z" /></g><defs><clipPath id="a"><path fill="#fff" style="fill:#fff;fill-opacity:1" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                                            </button>
+                                            <button type="button" class="btn_icon remove">
+                                                <span class="sound_only">삭제</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.8h12.6M13.202 3.8v9.8a1.4 1.4 0 0 1-1.4 1.4h-7a1.4 1.4 0 0 1-1.4-1.4V3.8m2.1 0V2.4a1.4 1.4 0 0 1 1.4-1.4h2.8a1.4 1.4 0 0 1 1.4 1.4v1.4M6.898 7.3v4.2M9.7 7.3v4.2" stroke="currentColor"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>테스트카드 01</td>
+                                        <td>법인</td>
+                                        <td>1234-XXXX-XXXX-XXXX</td>
+                                        <td>
+                                            <button type="button" class="btn_icon modify">
+                                                <span class="sound_only">수정</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.262 2.476h-4.87A1.391 1.391 0 0 0 1 3.867v9.741A1.392 1.392 0 0 0 2.391 15h9.74a1.391 1.391 0 0 0 1.392-1.392v-4.87" /><path d="M12.481 1.432a1.476 1.476 0 1 1 2.087 2.088l-6.61 6.61-2.782.695.696-2.783 6.609-6.61Z" /></g><defs><clipPath id="a"><path fill="#fff" style="fill:#fff;fill-opacity:1" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                                            </button>
+                                            <button type="button" class="btn_icon remove">
+                                                <span class="sound_only">삭제</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.8h12.6M13.202 3.8v9.8a1.4 1.4 0 0 1-1.4 1.4h-7a1.4 1.4 0 0 1-1.4-1.4V3.8m2.1 0V2.4a1.4 1.4 0 0 1 1.4-1.4h2.8a1.4 1.4 0 0 1 1.4 1.4v1.4M6.898 7.3v4.2M9.7 7.3v4.2" stroke="currentColor"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>테스트카드 01</td>
+                                        <td>법인</td>
+                                        <td>1234-XXXX-XXXX-XXXX</td>
+                                        <td>
+                                            <button type="button" class="btn_icon modify">
+                                                <span class="sound_only">수정</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.262 2.476h-4.87A1.391 1.391 0 0 0 1 3.867v9.741A1.392 1.392 0 0 0 2.391 15h9.74a1.391 1.391 0 0 0 1.392-1.392v-4.87" /><path d="M12.481 1.432a1.476 1.476 0 1 1 2.087 2.088l-6.61 6.61-2.782.695.696-2.783 6.609-6.61Z" /></g><defs><clipPath id="a"><path fill="#fff" style="fill:#fff;fill-opacity:1" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                                            </button>
+                                            <button type="button" class="btn_icon remove">
+                                                <span class="sound_only">삭제</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.8h12.6M13.202 3.8v9.8a1.4 1.4 0 0 1-1.4 1.4h-7a1.4 1.4 0 0 1-1.4-1.4V3.8m2.1 0V2.4a1.4 1.4 0 0 1 1.4-1.4h2.8a1.4 1.4 0 0 1 1.4 1.4v1.4M6.898 7.3v4.2M9.7 7.3v4.2" stroke="currentColor"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>테스트카드 01</td>
+                                        <td>법인</td>
+                                        <td>1234-XXXX-XXXX-XXXX</td>
+                                        <td>
+                                            <button type="button" class="btn_icon modify">
+                                                <span class="sound_only">수정</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.262 2.476h-4.87A1.391 1.391 0 0 0 1 3.867v9.741A1.392 1.392 0 0 0 2.391 15h9.74a1.391 1.391 0 0 0 1.392-1.392v-4.87" /><path d="M12.481 1.432a1.476 1.476 0 1 1 2.087 2.088l-6.61 6.61-2.782.695.696-2.783 6.609-6.61Z" /></g><defs><clipPath id="a"><path fill="#fff" style="fill:#fff;fill-opacity:1" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                                            </button>
+                                            <button type="button" class="btn_icon remove">
+                                                <span class="sound_only">삭제</span>
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.8h12.6M13.202 3.8v9.8a1.4 1.4 0 0 1-1.4 1.4h-7a1.4 1.4 0 0 1-1.4-1.4V3.8m2.1 0V2.4a1.4 1.4 0 0 1 1.4-1.4h2.8a1.4 1.4 0 0 1 1.4 1.4v1.4M6.898 7.3v4.2M9.7 7.3v4.2" stroke="currentColor"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_btns">
+                    <button type="button" class="btn4 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg modal_close"></span>
+</div>
+<!-- //자주쓰는카드 설정 -->
+
+
+</body>
+</html>	 

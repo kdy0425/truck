@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1600"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>화물공제분담금</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/toastify.min.css" />
+<link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+<link rel="stylesheet" href="../../assets/css/simplebar.css" />
+<link href="../../assets/css/choices.css" rel="stylesheet"/>
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="../../assets/js/simplebar.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/pikaday.js"></script>
+<script src="../../assets/js/inputmask.js"></script>
+<script src="../../assets/js/toastify-js.js"></script>
+<script src="../../assets/js/choices.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">화물공제분담금</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+    <div id="header">
+        <div id="logo">
+            <a href="../main/main.html"><img src="../../assets/images/logo.png" alt="KTA 화물공제분담금 신용카드수납시스템" style="height: 2.5rem;"></a>
+        </div>
+        <div class="hd_nav">
+            <nav id="nav">
+                <ul>
+                    <li class="on"><a href="javascript:;">조합원 정보</a></li>
+                    <li><a href="javascript:;">수납관리</a></li>
+                    <li><a href="javascript:;">정산관리</a></li>
+                    <li><a href="javascript:;">통계</a></li>
+                    <li><a href="javascript:;">게시판관리</a></li>
+                    <li><a href="javascript:;">연계관리</a></li>
+                    <li><a href="javascript:;">시스템관리</a></li>
+                </ul>
+            </nav>
+            <div class="nav_inner" style="display: none;">
+                <div class="title">
+                    <strong>전체메뉴</strong>
+                    <p>전체 시스템 메뉴를 한눈에<br/>
+                        보실 수 있습니다.</p>
+                </div>
+                <ul>
+                    <li class="on">
+                        <ul>
+                            <li><a href="javascript:;" class="on">조합원정보조회</a></li> 
+                            <li><a href="javascript:;">차량정보조회</a></li> 
+                            <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">전체수납대상</a></li> 
+                            <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                            <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                            <li><a href="javascript:;">적재물</a></li> 
+                            <li><a href="javascript:;">종사자재해</a></li> 
+                            <li><a href="javascript:;">가입금</a></li> 
+                            <li><a href="javascript:;">자부담금</a></li> 
+                            <li><a href="javascript:;">추가부담금</a></li> 
+                            <li><a href="javascript:;">수납내역 조회</a></li> 
+                            <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                            <li><a href="javascript:;">실시간승인내역</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">거래내역조회</a></li> 
+                            <li><a href="javascript:;">매입내역조회</a></li> 
+                            <li><a href="javascript:;">입금내역조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                            <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">공지사항</a></li> 
+                            <li><a href="javascript:;">자료실</a></li> 
+                            <li><a href="javascript:;">문의사항</a></li> 
+                            <li><a href="javascript:;">자주묻는질문</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">배치결과</a></li> 
+                            <li><a href="javascript:;">ARS로그조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">사용자관리</a></li> 
+                            <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                            <li><a href="javascript:;">공통코드관리</a></li> 
+                            <li><a href="javascript:;">KTA통합코드</a></li> 
+                            <li><a href="javascript:;">권한관리</a></li> 
+                            <li><a href="javascript:;">지원관리</a></li> 
+                            <li><a href="javascript:;">메뉴관리</a></li> 
+                            <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="header_links">
+            <div class="item">
+                <span class="text"><strong>관리자</strong> (000-0000-0000)</span>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">로그아웃</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">회원정보변경</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="green">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9019 3.16667H2.09762C1.42994 3.16667 0.888672 3.7016 0.888672 4.36148V12.1592C0.888672 12.8191 1.42994 13.354 2.09762 13.354H13.9019C14.5696 13.354 15.1109 12.8191 15.1109 12.1592V4.36148C15.1109 3.7016 14.5696 3.16667 13.9019 3.16667Z" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.888672 9.72917H15.1109" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.9824 5.85243H12.7667" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <strong>사용카드등록</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
+	<div id="aside" class="active">
+        <div class="aside_inner">
+            <div class="toggle_button_box">
+                <button id="menu_toggle" type="button" class="active" onclick="asideActive();"><span>menu close</span></button>
+                <script>
+                    //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+                    const menuState = getCookie('menuState');
+                    const asideElement = document.getElementById('aside');
+                    const menuToggle = document.getElementById('menu_toggle');
+                    if (menuState === 'open') {
+                        asideElement.classList.add('active');
+                        asideElement.classList.remove('closed');
+                        menuToggle.classList.add('active');
+                    }else if (menuState === 'closed') {
+                        asideElement.classList.remove('active');
+                        asideElement.classList.add('closed');
+                        menuToggle.classList.remove('active');
+                    } 
+                    //메뉴 토글 & 쿠키저장
+                    function asideActive(){
+                        const menuToggle = document.getElementById('menu_toggle');
+                        const asideElement = document.getElementById('aside');
+                        //메뉴 닫기
+                        if(menuToggle.classList.contains('active')){
+                            menuToggle.classList.remove('active');
+                            asideElement.classList.remove('active');
+                            asideElement.classList.add('closed');
+                            setCookie('menuState', 'closed', 0);//쿠키저장
+                        }else{//메뉴 열기
+                            menuToggle.classList.add('active');
+                            asideElement.classList.add('active');
+                            asideElement.classList.remove('closed');
+                            setCookie('menuState', 'open', 0); //쿠키저장
+                        }
+                    }
+                </script>
+            </div>
+            <div class="nav_wrap" data-simplebar>
+                <nav>
+                    <ul>
+                        <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon1_1.svg" class="nav_icon"><span>조합원 정보</span></a>
+                            <ul>
+                                <li><a href="javascript:;" class="active">조합원정보조회</a></li> 
+                                <li><a href="javascript:;">차량정보조회</a></li> 
+                                <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_2.svg" class="nav_icon"><span>수납관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">전체수납대상</a></li> 
+                                <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                                <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                                <li><a href="javascript:;">적재물</a></li> 
+                                <li><a href="javascript:;">종사자재해</a></li> 
+                                <li><a href="javascript:;">가입금</a></li> 
+                                <li><a href="javascript:;">자부담금</a></li> 
+                                <li><a href="javascript:;">추가부담금</a></li> 
+                                <li><a href="javascript:;">수납내역 조회</a></li> 
+                                <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                                <li><a href="javascript:;">실시간승인내역</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_3.svg" class="nav_icon"><span>정산관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">거래내역조회</a></li> 
+                                <li><a href="javascript:;">매입내역조회</a></li> 
+                                <li><a href="javascript:;">입금내역조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_4.svg" class="nav_icon"><span>통계</span></a>
+                            <ul>
+                                <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                                <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_5.svg" class="nav_icon"><span>게시판 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">공지사항</a></li> 
+                                <li><a href="javascript:;">자료실</a></li> 
+                                <li><a href="javascript:;">문의사항</a></li> 
+                                <li><a href="javascript:;">자주묻는질문</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_6.svg" class="nav_icon"><span>연계관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">배치결과</a></li> 
+                                <li><a href="javascript:;">ARS로그조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_7.svg" class="nav_icon"><span>시스템 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">사용자관리</a></li> 
+                                <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                                <li><a href="javascript:;">공통코드관리</a></li> 
+                                <li><a href="javascript:;">KTA통합코드</a></li> 
+                                <li><a href="javascript:;">권한관리</a></li> 
+                                <li><a href="javascript:;">지원관리</a></li> 
+                                <li><a href="javascript:;">메뉴관리</a></li> 
+                                <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                            </ul>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+	</div>
+	<!-- //header -->	
+
+    <div id="content_wrap">
+        <!-- content -->
+        <div id="content">
+            <div class="page">
+                <div class="page_section">
+                    <div class="search_form_wrap">
+                        <div class="display_flex aitem_center">
+                            <h3 class="section_title">거래내역 조회</h3>
+                            <div class="ml_auto">
+                                <div class="location">
+                                    <div class="item"><a href="javascript:;" class="home">Home</a></div>
+                                    <div class="item"><a href="javascript:;">조합원 정보</a></div>
+                                    <div class="item"><a href="javascript:;">조합원 정보 조회</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 검색 -->
+                        <div class="search_form">
+                            <div class="form_items">
+                                <div class="item">
+                                    <div class="tit">승인일</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text" placeholder="YYYY-MM-DD" class="datepicker">
+                                        </div> 
+                                        <span class="input_text">-</span>
+                                        <div class="input size_19">
+                                            <input type="text" placeholder="YYYY-MM-DD" class="datepicker">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">매입일</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text" placeholder="YYYY-MM-DD" class="datepicker">
+                                        </div> 
+                                        <span class="input_text">-</span>
+                                        <div class="input size_19">
+                                            <input type="text" placeholder="YYYY-MM-DD" class="datepicker">
+                                        </div> 
+                                        <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>당일</label>
+                                        <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>2주</label>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">계약종류</div>
+                                    <div class="input_group">
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>자동차공제 통합계약</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>종사자자해</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>적재물</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>가입금</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>자부담금</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>추가분담금</label>
+                                        <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>카드미결</label>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">조합원</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">대표자명</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">사업자번호</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">계약지부</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <select name="" id="">
+                                                <option value="전체">전체</option>
+                                                <option value="옵션1">옵션11</option>
+                                                <option value="옵션2">옵션22</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">차량번호</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">카드번호 </div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">구분</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <select name="" id="">
+                                                <option value="전체">전체</option>
+                                                <option value="옵션1">옵션11</option>
+                                                <option value="옵션2">옵션22</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">처리상태</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <select name="" id="">
+                                                <option value="전체">전체</option>
+                                                <option value="옵션1">옵션11</option>
+                                                <option value="옵션2">옵션22</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">입금상태</div>
+                                    <div class="input_group">
+                                        <div class="input size_19">
+                                            <select name="" id="">
+                                                <option value="전체">전체</option>
+                                                <option value="옵션1">옵션11</option>
+                                                <option value="옵션2">옵션22</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class="btns">
+                                    <button type="button" class="btn1 btn_dark">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_398_4783" fill="currentColor">
+                                        <rect width="16" height="10" rx="1"/>
+                                        </mask>
+                                        <rect width="16" height="10" rx="1" stroke="currentColor" stroke-width="4" stroke-linejoin="round" mask="url(#path-1-inside-1_398_4783)"/>
+                                        <path d="M3.5 6H12.5V15H3.5V6Z" fill="#34415F" stroke="currentColor"  stroke-width="1.5" stroke-linejoin="round"/>
+                                        <path d="M6.25 9H9.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M6.25 12H9.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                        출력
+                                    </button>
+                                    <button type="button" class="btn1 btn_primary">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M11.5 11.5L14.9999 14.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        조회
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //검색 -->
+                    </div>
+
+            
+                    <!-- 리스트 -->
+                    <div class="table_list tr_hover">
+                        <table class="label_control">
+                            <colgroup>
+                                <col style="width: 6.04%;">
+                                <col style="width: 6.04%;">
+                                <col style="width: 10.91%;">
+                                <col style="width: 4.88%;">
+                                <col style="width: 7.93%;">
+                                <col style="width: 4.88%;">
+                                <col style="width: 7.93%;">
+                                <col style="width: 4.88%;">
+                                <col style="width: 7.93%;">
+                                <col style="width: 4.88%;">
+                                <col style="width: 7.93%;">
+                                <col style="width: 4.88%;">
+                                <col style="width: 7.93%;">
+                                <col style="width: 4.88%;">
+                                <col style="width: 7.93%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">카드사</th>
+                                    <th rowspan="3">지부</th>
+                                    <th rowspan="3" class="line_right">카드종류</th>
+                                    <th colspan="6" class="line_right">승인</th>
+                                    <th colspan="6" class="line_right">취소</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">일반</th>
+                                    <th colspan="2">할부</th>
+                                    <th colspan="2" class="line_right">합계</th>
+                                    <th colspan="2">일반</th>
+                                    <th colspan="2">할부</th>
+                                    <th colspan="2">합계</th>
+                                </tr>
+                                <tr>
+                                    <th>건수</th>
+                                    <th>금액</th>
+                                    <th>건수</th>
+                                    <th>금액</th>
+                                    <th>건수</th>
+                                    <th class="line_right">금액</th>
+                                    <th>건수</th>
+                                    <th>금액</th>
+                                    <th>건수</th>
+                                    <th>금액</th>
+                                    <th>건수</th>
+                                    <th>금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="3" class="line_bottom">KB국민카드</th>
+                                    <th rowspan="3" class="line_bottom">전체</th>
+                                    <th class="line_right">카드결제(조합원사)</th> 
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right line_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                </tr>
+                                <tr>
+                                    <th class="line_right">카드결제(위·수탁차주)</th> 
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right line_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                </tr>
+                                <tr>
+                                    <th class="line_right line_bottom">합계</th> 
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" class="line_bottom">KB국민카드</th>
+                                    <th rowspan="3" class="line_bottom">전체</th>
+                                    <th class="line_right">카드결제(조합원사)</th> 
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right line_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                </tr>
+                                <tr>
+                                    <th class="line_right">카드결제(위·수탁차주)</th> 
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right line_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                    <td>12,345</td>
+                                    <td class="align_right">11,740,003,860</td>
+                                </tr>
+                                <tr>
+                                    <th class="line_right line_bottom">합계</th> 
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                    <td class="line_bottom">12,345</td>
+                                    <td class="align_right line_bottom">11,740,003,860</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //리스트 -->
+                </div>
+
+            </div>
+        </div>
+        <!-- //content -->
+        <div id="footer">
+            <div class="copy">COPYRIGHTⒸ KTA. All RIGHTS RESERVED. 2017</div>
+            <div class="ver">Version 1.0.0</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>	 

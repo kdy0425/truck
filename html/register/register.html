@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1600"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>화물공제분담금</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/toastify.min.css" />
+<link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+<link rel="stylesheet" href="../../assets/css/simplebar.css" />
+<link href="../../assets/css/choices.css" rel="stylesheet"/>
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="../../assets/js/simplebar.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/pikaday.js"></script>
+<script src="../../assets/js/inputmask.js"></script>
+<script src="../../assets/js/toastify-js.js"></script>
+<script src="../../assets/js/choices.js"></script>
+
+<!-- jqgrid -->
+<link rel="stylesheet" href="../../assets/css/ui.jqgrid.css" type="text/css" />
+<script type="text/javascript" src="../../assets/js/grid.locale-kr.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery.jqGrid.src.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">화물공제분담금</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+    <div id="header">
+        <div id="logo">
+            <a href="../main/main.html"><img src="../../assets/images/logo.png" alt="KTA 화물공제분담금 신용카드수납시스템" style="height: 2.5rem;"></a>
+        </div>
+        <div class="hd_nav">
+            <nav id="nav">
+                <ul>
+                    <li class="on"><a href="javascript:;">조합원 정보</a></li>
+                    <li><a href="javascript:;">수납관리</a></li>
+                    <li><a href="javascript:;">정산관리</a></li>
+                    <li><a href="javascript:;">통계</a></li>
+                    <li><a href="javascript:;">게시판관리</a></li>
+                    <li><a href="javascript:;">연계관리</a></li>
+                    <li><a href="javascript:;">시스템관리</a></li>
+                </ul>
+            </nav>
+            <div class="nav_inner" style="display: none;">
+                <div class="title">
+                    <strong>전체메뉴</strong>
+                    <p>전체 시스템 메뉴를 한눈에<br/>
+                        보실 수 있습니다.</p>
+                </div>
+                <ul>
+                    <li class="on">
+                        <ul>
+                            <li><a href="javascript:;" class="on">조합원정보조회</a></li> 
+                            <li><a href="javascript:;">차량정보조회</a></li> 
+                            <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">전체수납대상</a></li> 
+                            <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                            <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                            <li><a href="javascript:;">적재물</a></li> 
+                            <li><a href="javascript:;">종사자재해</a></li> 
+                            <li><a href="javascript:;">가입금</a></li> 
+                            <li><a href="javascript:;">자부담금</a></li> 
+                            <li><a href="javascript:;">추가부담금</a></li> 
+                            <li><a href="javascript:;">수납내역 조회</a></li> 
+                            <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                            <li><a href="javascript:;">실시간승인내역</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">거래내역조회</a></li> 
+                            <li><a href="javascript:;">매입내역조회</a></li> 
+                            <li><a href="javascript:;">입금내역조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                            <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">공지사항</a></li> 
+                            <li><a href="javascript:;">자료실</a></li> 
+                            <li><a href="javascript:;">문의사항</a></li> 
+                            <li><a href="javascript:;">자주묻는질문</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">배치결과</a></li> 
+                            <li><a href="javascript:;">ARS로그조회</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;">사용자관리</a></li> 
+                            <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                            <li><a href="javascript:;">공통코드관리</a></li> 
+                            <li><a href="javascript:;">KTA통합코드</a></li> 
+                            <li><a href="javascript:;">권한관리</a></li> 
+                            <li><a href="javascript:;">지원관리</a></li> 
+                            <li><a href="javascript:;">메뉴관리</a></li> 
+                            <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="header_links">
+            <div class="item">
+                <span class="text"><strong>관리자</strong> (000-0000-0000)</span>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">로그아웃</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="gray">회원정보변경</a>
+            </div>
+            <div class="item">
+                <a href="javascript:;" class="green">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9019 3.16667H2.09762C1.42994 3.16667 0.888672 3.7016 0.888672 4.36148V12.1592C0.888672 12.8191 1.42994 13.354 2.09762 13.354H13.9019C14.5696 13.354 15.1109 12.8191 15.1109 12.1592V4.36148C15.1109 3.7016 14.5696 3.16667 13.9019 3.16667Z" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.888672 9.72917H15.1109" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.9824 5.85243H12.7667" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <strong>사용카드등록</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
+	<div id="aside" class="active">
+        <div class="aside_inner">
+            <div class="toggle_button_box">
+                <button id="menu_toggle" type="button" class="active" onclick="asideActive();"><span>menu close</span></button>
+                <script>
+                    //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+                    const menuState = getCookie('menuState');
+                    const asideElement = document.getElementById('aside');
+                    const menuToggle = document.getElementById('menu_toggle');
+                    if (menuState === 'open') {
+                        asideElement.classList.add('active');
+                        asideElement.classList.remove('closed');
+                        menuToggle.classList.add('active');
+                    }else if (menuState === 'closed') {
+                        asideElement.classList.remove('active');
+                        asideElement.classList.add('closed');
+                        menuToggle.classList.remove('active');
+                    } 
+                    //메뉴 토글 & 쿠키저장
+                    function asideActive(){
+                        const menuToggle = document.getElementById('menu_toggle');
+                        const asideElement = document.getElementById('aside');
+                        //메뉴 닫기
+                        if(menuToggle.classList.contains('active')){
+                            menuToggle.classList.remove('active');
+                            asideElement.classList.remove('active');
+                            asideElement.classList.add('closed');
+                            setCookie('menuState', 'closed', 0);//쿠키저장
+                        }else{//메뉴 열기
+                            menuToggle.classList.add('active');
+                            asideElement.classList.add('active');
+                            asideElement.classList.remove('closed');
+                            setCookie('menuState', 'open', 0); //쿠키저장
+                        }
+                    }
+                </script>
+            </div>
+            <div class="nav_wrap" data-simplebar>
+                <nav>
+                    <ul>
+                        <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon1_1.svg" class="nav_icon"><span>조합원 정보</span></a>
+                            <ul>
+                                <li><a href="javascript:;" class="active">조합원정보조회</a></li> 
+                                <li><a href="javascript:;">차량정보조회</a></li> 
+                                <li><a href="javascript:;">위수탁차주정보조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_2.svg" class="nav_icon"><span>수납관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">전체수납대상</a></li> 
+                                <li><a href="javascript:;">위수탁차주수납대상</a></li> 
+                                <li><a href="javascript:;">자동차공제 통합계약</a></li> 
+                                <li><a href="javascript:;">적재물</a></li> 
+                                <li><a href="javascript:;">종사자재해</a></li> 
+                                <li><a href="javascript:;">가입금</a></li> 
+                                <li><a href="javascript:;">자부담금</a></li> 
+                                <li><a href="javascript:;">추가부담금</a></li> 
+                                <li><a href="javascript:;">수납내역 조회</a></li> 
+                                <li><a href="javascript:;">수납취소내역 조회</a></li> 
+                                <li><a href="javascript:;">실시간승인내역</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_3.svg" class="nav_icon"><span>정산관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">거래내역조회</a></li> 
+                                <li><a href="javascript:;">매입내역조회</a></li> 
+                                <li><a href="javascript:;">입금내역조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_4.svg" class="nav_icon"><span>통계</span></a>
+                            <ul>
+                                <li><a href="javascript:;">카드사별 사용 통계</a></li> 
+                                <li><a href="javascript:;">시간대별 사용 통계</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_5.svg" class="nav_icon"><span>게시판 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">공지사항</a></li> 
+                                <li><a href="javascript:;">자료실</a></li> 
+                                <li><a href="javascript:;">문의사항</a></li> 
+                                <li><a href="javascript:;">자주묻는질문</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_6.svg" class="nav_icon"><span>연계관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">배치결과</a></li> 
+                                <li><a href="javascript:;">ARS로그조회</a></li> 
+                            </ul>
+                        </li> 
+                        <li class="close"><a href="javascript:;"><img src="../../assets/images/nav_icon1_7.svg" class="nav_icon"><span>시스템 관리</span></a>
+                            <ul>
+                                <li><a href="javascript:;">사용자관리</a></li> 
+                                <li><a href="javascript:;">지부(가맹점)관리</a></li> 
+                                <li><a href="javascript:;">공통코드관리</a></li> 
+                                <li><a href="javascript:;">KTA통합코드</a></li> 
+                                <li><a href="javascript:;">권한관리</a></li> 
+                                <li><a href="javascript:;">지원관리</a></li> 
+                                <li><a href="javascript:;">메뉴관리</a></li> 
+                                <li><a href="javascript:;">메뉴-권한관리</a></li> 
+                            </ul>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+	</div>
+	<!-- //header -->	
+
+    <div id="content_wrap">
+        <!-- content -->
+        <div id="content">
+            <div class="page">
+                <div class="page_section">
+                    <div class="page_title">
+                        <h3 class="section_title">공지사항</h3>
+                    </div>
+                    <form>
+                        <div class="table_list table_form">
+                            <table class="label_control">
+                                <colgroup>
+                                    <col style="width: 200px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>제목</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>공개여부</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_19">
+                                                    <select name="" id="">
+                                                        <option value="공개">공개</option>
+                                                        <option value="옵션1">옵션1</option>
+                                                        <option value="옵션2">옵션2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>공개범위</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_19">
+                                                    <select name="" id="">
+                                                        <option value="전체">전체</option>
+                                                        <option value="옵션1">옵션1</option>
+                                                        <option value="옵션2">옵션2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>내용</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input">
+                                                    <textarea name="" id=""></textarea>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일 등록</th>
+                                        <td>
+                                            <div class="file_uploads">
+                                                <div class="item">
+                                                    <div class="file_item">
+                                                        <label class="file_btn btn1 btn_gray">
+                                                            <input type="file">
+                                                            <span class="file_select">파일선택</span>
+                                                        </label>
+                                                        <span class="name">선택된 파일 없음</span>
+                                                        <button type="button" class="file_remove btn_gray" style="display:none;">파일삭제</button>
+                                                    </div>
+                                                    <button type="button" class="btn_file_add btn1 btn_gray_outline">추가</button>
+                                                </div>
+                                            </div>
+                                            <script>
+                                            document.addEventListener('DOMContentLoaded', function() {
+                                                document.addEventListener('change', function(e) {
+                                                if (e.target && e.target.matches('input[type="file"]')) {
+                                                    var fileInput = e.target;
+                                                    var fileItem = fileInput.closest('.file_item');
+                                                    var fileNameSpan = fileItem.querySelector('.name');
+                                                    var fileRemoveBtn = fileItem.querySelector('.file_remove');
+                                                    var file = fileInput.files[0];
+                                                    if (file) {
+                                                    fileNameSpan.textContent = file.name;
+                                                    fileRemoveBtn.style.display = 'inline-block';
+                                                    }
+                                                }
+                                                });
+                                            
+                                                document.addEventListener('click', function(e) {
+                                                if (e.target && e.target.matches('.file_remove')) {
+                                                    var fileRemoveBtn = e.target;
+                                                    var fileItem = fileRemoveBtn.closest('.file_item');
+                                                    var fileInput = fileItem.querySelector('input[type="file"]');
+                                                    var newFileInput = fileInput.cloneNode(true);
+                                                    fileInput.parentNode.replaceChild(newFileInput, fileInput);
+                                                    var fileNameSpan = fileItem.querySelector('.name');
+                                                    fileNameSpan.textContent = '선택된 파일 없음';
+                                                    fileRemoveBtn.style.display = 'none';
+                                                }
+                                                });
+                                            
+                                                document.addEventListener('click', function(e) {
+                                                if (e.target && e.target.matches('.btn_file_add')) {
+                                                    var currentItem = e.target.closest('.item');
+                                                    var clonedItem = currentItem.cloneNode(true);
+                                                    var fileInput = clonedItem.querySelector('input[type="file"]');
+                                                    fileInput.value = "";
+                                                    var fileNameSpan = clonedItem.querySelector('.name');
+                                                    fileNameSpan.textContent = '선택된 파일 없음';
+                                                    var fileRemoveBtn = clonedItem.querySelector('.file_remove');
+                                                    fileRemoveBtn.style.display = 'none';
+                                            
+                                                    var addBtn = clonedItem.querySelector('.btn_file_add');
+                                                    var removeRowBtn = clonedItem.querySelector('.btn_file_remove');
+                                                    if (addBtn) {
+                                                    addBtn.style.display = 'none';
+                                                    }
+                                                    if (removeRowBtn) {
+                                                    removeRowBtn.style.display = 'inline-block';
+                                                    } else {
+                                                    removeRowBtn = document.createElement('button');
+                                                    removeRowBtn.type = 'button';
+                                                    removeRowBtn.className = 'btn_file_remove btn1 btn_gray_outline';
+                                                    removeRowBtn.textContent = '삭제';
+                                                    clonedItem.appendChild(removeRowBtn);
+                                                    }
+                                            
+                                                    document.querySelector('.file_uploads').appendChild(clonedItem);
+                                                }
+                                                });
+                                            
+                                                document.addEventListener('click', function(e) {
+                                                if (e.target && e.target.matches('.btn_file_remove')) {
+                                                    var currentItem = e.target.closest('.item');
+                                                    currentItem.parentNode.removeChild(currentItem);
+                                                }
+                                                });
+                                            });
+                                            </script>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>radio btn</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>버튼1</label>
+                                                <label class="checkbox"><input type="radio" name="radio1"><span class="ck_icon"></span>버튼2</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>disabled+btn 조합</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_19">
+                                                    <input type="text" readonly value="사업자유형(005)">
+                                                </div>
+                                                <button type="button" class="btn1 btn_gray_outline" onclick="openLayer('#search_code');">그룹코드조회</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>input + 보조설명 조합</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_19">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="input_text"><em><span class="text_red">＊</span><span class="text_gray">영문+숫자 or 숫자 2자리로 구성되어야 합니다.</span></em></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>input + 알림</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_19">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="input_text"><em><span class="text_red">※ 6자이상, 영문자와 숫자를 혼용해야 합니다.</span></em></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>이메일</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_19">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="input_text">@</div>
+                                                <div class="input size_19">
+                                                    <input type="text" id="email_second">
+                                                </div>
+                                                <div class="input size_19">
+                                                    <select name="" id="email_select">
+                                                        <option value="">직접입력</option>
+                                                        <option value="gmail.com">gmail.com</option>
+                                                        <option value="naver.com">naver.com</option>
+                                                        <option value="daum.net">daum.net</option>
+                                                        <option value="nate.com">nate.com</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                document.addEventListener("DOMContentLoaded", function() {
+                                                const domainInput = document.querySelector('#email_second');
+                                                const domainSelect = document.querySelector('#email_select');
+                                            
+                                                domainSelect.addEventListener("change", function() {
+                                                    const selectedText = domainSelect.options[domainSelect.selectedIndex].text;
+                                                    if(selectedText === "직접입력") {
+                                                    domainInput.value = "";
+                                                    domainInput.disabled = false;
+                                                    domainInput.focus();
+                                                    } else {
+                                                    domainInput.value = selectedText;
+                                                    domainInput.disabled = true;
+                                                    }
+                                                });
+                                                });
+                                            </script>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>연락처</th>
+                                        <td>
+                                            <div class="input_group">
+                                                <div class="input size_19">
+                                                    <select name="" id="">
+                                                        <option value="">직접입력</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input_text">-</div>
+                                                <div class="input size_19">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="input_text">-</div>
+                                                <div class="input size_19">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="input_text"><em><span class="text_red">＊</span><span class="text_gray">예) 010-0000-0000</span></em></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="btn_box">
+                            <div class="r btns">
+                                <button type="button" class="btn1 btn_primary">저장</button>
+                                <button type="button" class="btn1 btn_primary">수정</button>
+                                <button type="button" class="btn1 btn_gray">삭제</button>
+                                <button type="button" class="btn1 btn_dark_outline">취소</button>
+                                <button type="button" class="btn1 btn_dark_outline">목록</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+        <div id="footer">
+            <div class="copy">COPYRIGHTⒸ KTA. All RIGHTS RESERVED. 2017</div>
+            <div class="ver">Version 1.0.0</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 그룹코드조회 -->
+<div id="search_code" class="layer_popup" role="dialog">
+    <div class="layer_box" style="width:80rem;" role="document">
+        <div class="layer_header">
+            <h5 class="layer_title">그룹코드조회</h5>
+            <button type="button" class="layer_close modal_close" onclick="closeLayer(this);">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="layer_content">
+                <div class="popup_section">
+                    <div class="ps_title">
+                        <h6 class="square_title">그룹코드조회</h6>
+                    </div>
+                    <div class="search_form_wrap">
+                        <div class="search_form">
+                            <div class="form_items">
+                                <div class="item">
+                                    <div class="input_group">
+                                        <div class="input size_16">
+                                            <select name="" id="">
+                                                <option value="">그룹코드</option>
+                                                <option value="코드1">코드1</option>
+                                                <option value="코드2">코드2</option>
+                                            </select>
+                                        </div> 
+                                        <div class="input size_16">
+                                            <input type="text">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <button type="button" class="btn1 btn_primary">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M11.5 11.5L14.9999 14.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        조회
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 리스트 -->
+                    <div class="table_list table_scroll tr_hover">
+                        <div class="scroll_thead">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 80px;">
+                                    <col style="width: 110px;">
+                                    <col style="width: 305px;">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>선택</th>
+                                        <th>번호</th>
+                                        <th>그룹코드</th>
+                                        <th>그룹코드명</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="scroll_tbody" style="max-height: 60.1rem;" data-simplebar>
+                            <table>
+                                <colgroup>
+                                    <col style="width: 80px;">
+                                    <col style="width: 110px;">
+                                    <col style="width: 305px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>1</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>2</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>3</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>4</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>5</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>6</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>7</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>8</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>9</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>10</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>11</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>12</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>13</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>14</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>15</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>16</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>17</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="checkbox single"><input type="radio" name="radio1"><span class="ck_icon"></span></label></td>
+                                        <td>18</td>
+                                        <td>005</td>
+                                        <td>사업자유형</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //리스트 -->
+
+                    <!-- 페이징 -->
+                    <div class="paging_box">
+                        <div class="paging">
+                            <a href="javascript:;" id="paging_prev" class="pg prev disabled">이전 페이지</a>
+                            <a href="javascript:;" id="paging_prev" class="pg prev">이전 페이지</a>
+                            <a href="javascript:;" id="paging_1">1</a>
+                            <a href="javascript:;" id="paging_3" class="active" title="선택됨">2</a>
+                            <a href="javascript:;" id="paging_3">3</a>
+                            <a href="javascript:;" id="paging_4">4</a>
+                            <a href="javascript:;" id="paging_5">5</a>
+                            <a href="javascript:;" id="paging_next" class="pg next">다음 페이지</a>
+                            <a href="javascript:;" id="paging_next" class="pg next disabled">다음 페이지</a>
+                        </div>
+                    </div>
+                    <!-- //페이징 -->
+                </div>
+                <div class="layer_btns">
+                    <button type="button" class="btn3 btn_primary" onclick="closeLayer(this);">등록</button>
+                    <button type="button" class="btn3 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg modal_close"></span>
+</div>
+<!-- //그룹코드조회 -->
+
+
+</body>
+</html>	 
