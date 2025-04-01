@@ -601,7 +601,7 @@ document.oncontextmenu = function(){return false;}
 
 //레이어팝업 열고닫기
 function openLayer(target) {
-    document.querySelector(target).style.display = 'flex';
+    document.querySelector(target).style.display = 'block';
     document.querySelector('html').classList.add('scroll_hidden');
 	const layerBox = document.querySelector(target).querySelector('.layer_box');
 	const windowHeight = window.innerHeight;

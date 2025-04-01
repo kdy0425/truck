@@ -26,13 +26,13 @@
 <link href="../../assets/css/choices.css" rel="stylesheet"/>
 <script src="../../assets/js/jquery-3.4.1.min.js"></script>
 <script src="../../assets/js/jquery-ui.min.js"></script>
-<script src="../../assets/js/simplebar.js"></script>
+<script src="../../assets/js/simplebar.min.js"></script>
 <script src="../../assets/js/swiper.js"></script>
 <script src="../../assets/js/common.js"></script>
 <script src="../../assets/js/pikaday.js"></script>
 <script src="../../assets/js/inputmask.js"></script>
 <script src="../../assets/js/toastify-js.js"></script>
-<script src="../../assets/js/choices.js"></script>
+<script src="../../assets/js/choices.min.js"></script>
 </head>
 <body>
 
@@ -355,7 +355,7 @@
                                 </thead>
                             </table>
                         </div>
-                        <div class="scroll_tbody" style="max-height: 60.1rem;" data-simplebar>
+                        <div class="scroll_tbody" style="max-height: 48.1rem;" data-simplebar>
                             <table>
                                 <colgroup>
                                     <col style="width: 80px;">
@@ -743,12 +743,7 @@
                                     <td>
                                         <div class="input_group">
                                             <div class="input size_8">
-                                                <select name="" id="">
-                                                    <option value=""></option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select>
+                                                <input type="text">
                                             </div>
                                             <div class="input_text">-</div>
                                             <div class="input size_8">
@@ -780,6 +775,24 @@
                                             <div class="input_text">-</div>
                                             <div class="input size_8">
                                                 <input type="text">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>계좌번호</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input">
+                                                <input type="text" value="12354354843">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>우편번호</th>
+                                    <td>
+                                        <div class="input_group">
+                                            <div class="input">
+                                                <input type="text" value="12345">
                                             </div>
                                         </div>
                                     </td>
@@ -991,8 +1004,8 @@
                     </div>
                 </div>
                 <div class="layer_btns mt_20">
-                    <button type="button" class="btn4 btn_primary" onclick="closeLayer(this);">확인</button>
-                    <button type="button" class="btn4 btn_dark_outline" onclick="closeLayer(this);">취소</button>
+                    <button type="button" class="btn3 btn_primary" onclick="closeLayer(this);">확인</button>
+                    <button type="button" class="btn3 btn_dark_outline" onclick="closeLayer(this);">취소</button>
                 </div>
             </div>
         </div>
@@ -1056,8 +1069,8 @@
                     </div>
                 </div>
                 <div class="layer_btns">
-                    <button type="button" class="btn4 btn_primary" onclick="closeLayer(this);">등록</button>
-                    <button type="button" class="btn4 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
+                    <button type="button" class="btn3 btn_primary" onclick="closeLayer(this);">등록</button>
+                    <button type="button" class="btn3 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
                 </div>
             </div>
         </div>
@@ -1209,7 +1222,7 @@
                     </div>
                 </div>
                 <div class="layer_btns">
-                    <button type="button" class="btn4 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
+                    <button type="button" class="btn3 btn_dark_outline" onclick="closeLayer(this);">닫기</button>
                 </div>
             </div>
         </div>
