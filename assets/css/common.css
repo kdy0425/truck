@@ -209,7 +209,6 @@ html .toastify.success:before{content:"";margin-right:1rem;display: inline-block
 }
 
 .btns{}
-.btns [class^= "btn"] + [class^= "btn"]{margin-left:0.5rem;}
 .btn_text{display: inline-flex;align-items: center;font-size:1.5rem;font-weight:700;}
 .btn_text.text_blue:hover{color:#06649B !important;}
 .btn_text svg + span{margin-left:0.8rem;}

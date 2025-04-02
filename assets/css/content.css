@@ -607,7 +607,7 @@ html .jq_table .use_sort .s-ico{display: inline-block !important;}
 .layer_box .layer_close{position:absolute;right:1.6rem;top:1.8rem;width:2.4rem;height:2.4rem;border:0;background-color: transparent;text-indent:-999em;overflow:hidden;background-repeat:no-repeat;background-position:center center;background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.861 1 1.001 15M1.139 1l13.86 14' stroke='%232D2D2D' style='stroke:color(display-p3 .1765 .1765 .1765);stroke-opacity:1' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");}
 .layer_box .layer_body{padding:2rem 0;font-family: "pretendard";}
 .layer_box .layer_body *{font-family: "pretendard";}
-.layer_box .layer_btns{display:flex;justify-content: center;gap:0.8rem;margin-top:4rem;}
+.layer_box .layer_btns{display:flex;justify-content: center;gap:0.5rem;margin-top:4rem;}
 .layer_bg{display:inline-block;width:0;height:100%;vertical-align:middle}
 .popup_section + .popup_section{margin-top:4rem;}
 .margin_box{padding-left:2rem;padding-right:2rem;}
